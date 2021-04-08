@@ -21,7 +21,8 @@ docker-compose up
 </pre>
 </br>
 5> Content of Component </br>
-* constructer(props)
+
+* 1> constructer(props)
 * 2> ComponentDidMount(d3 to visualize)
 * 3> props changes => ComponentWillReceiveProps(update 2>)
 * 4> Render
