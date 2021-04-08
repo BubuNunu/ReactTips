@@ -27,3 +27,15 @@ docker-compose up
 * 3> props changes => ComponentWillReceiveProps(update 2>)
 * 4> Render
 
+### 4. Run the container
+* check the version of Ubuntu
+<pre>
+# in the terminal
+lsb_release -a
+# release the info
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+</pre>
