@@ -1,2 +1,2 @@
 ### 1. lifecyle
-<img src = "./images/lifeCycle.png">
+<img width = 60% src = "./images/lifeCycle.png">
