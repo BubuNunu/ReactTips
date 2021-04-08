@@ -19,4 +19,10 @@ docker-compose up
 # app.js(tell "Base" to load data and go to the layout of the interface "Main") -> 
 # components -> action(intermedia to transform data to backend) -> Server
 </pre>
+</br>
+5> Content of Component
+* 1> constructer(props)
+* 2> ComponentDidMount(d3 to visualize)
+* 3> props changes => ComponentWillReceiveProps(update 2>)
+* 4> Render
 
