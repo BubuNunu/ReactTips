@@ -1,1 +1,2 @@
-1. lifecyle
+### 1. lifecyle
+<img src = "./images/lifeCycle.png">
