@@ -39,3 +39,25 @@ Description:	Ubuntu 20.04.2 LTS
 Release:	20.04
 Codename:	focal
 </pre>
+* install docker
+<pre>
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+# configure docker to start on boot
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
+</pre>
+* install docker-compose
+<pre>
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+</pre>
+* In the container, npm install under gui
+<pre>
+sudo npm install
+</pre>
+* start the contanair
+<pre>
+sudo docker-compose up
+</pre>
+
