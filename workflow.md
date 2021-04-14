@@ -61,3 +61,18 @@ sudo npm install
 sudo docker-compose up
 </pre>
 
+#### 5. run front end and backend seperately, do not use docker
+* go to the gui folder to start the front end: 
+<pre>
+npm start
+</pre>
+* go to the server folder:
+<pre>
+# install some tool for backend
+pip install requirements.txt
+# go to docker-compose.yml in the glocal folder to find the command to start server under server folder
+gunicorn server:app -c gunicorn.conf.py
+# the gunicorn.conf.py file define the port of the backend.
+</pre>
+But for my current project(distribution on merge tree) don't need th python backend. I have the c++ backend connecting through paraview.
+Therefore, I don't need to start the server. Only start the front end is ok. 
