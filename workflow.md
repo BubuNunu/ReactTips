@@ -61,7 +61,7 @@ sudo npm install
 sudo docker-compose up
 </pre>
 
-#### 5. run front end and backend seperately, do not use docker
+### 5. run front end and backend seperately, do not use docker
 * go to the gui folder to start the front end: 
 <pre>
 npm start
