@@ -76,3 +76,12 @@ gunicorn server:app -c gunicorn.conf.py
 </pre>
 But for my current project(distribution on merge tree) don't need th python backend. I have the c++ backend connecting through paraview.
 Therefore, I don't need to start the server. Only start the front end is ok. 
+
+### 6. communication between different components
+* scenario 1: componentA needs to influence ComponentB:
+  * "mapStateToProps": used to get the global variable, State:{key1: value1, key2: value2, ...}
+  * "mapDispatchToProps": used to change the global variable from the current Component.
+  * 1> In the componentA: create a function(UpdateinA) to bind the variable for updating the glocal state. in the fundtion "mapDispatchToProps". import 2> here
+  * 2> src/actions/index.js: export the function(UpdateinA), define the type of the data.
+  * 3> src/reducers/index.js: based on the data type, update the state here.
+  * 4> src/constants/actionType.js: define the data type here. import it in 2> and 3>
