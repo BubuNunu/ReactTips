@@ -83,5 +83,5 @@ Therefore, I don't need to start the server. Only start the front end is ok.
   * "mapDispatchToProps": used to change the global variable from the current Component.
   * 1> In the componentA: create a function(UpdateinA) to bind the variable for updating the glocal state. in the fundtion "mapDispatchToProps". import 2> here
   * 2> src/actions/index.js: export the function(UpdateinA), define the type of the data.
-  * 3> src/reducers/index.js: based on the data type, update the state here.
+  * 3> src/reducers/index.js: based on the data type, update the state here. In the file, you can initilize the value of the data type of state.
   * 4> src/constants/actionType.js: define the data type here. import it in 2> and 3>
